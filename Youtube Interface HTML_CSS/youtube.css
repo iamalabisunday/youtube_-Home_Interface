@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  max-height: 100vh;
+  background-color: #0f0f0f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ************************** */
+/* Header Section */
+/* ************************** */
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Manu_Logo */
+.manuLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.manuLogo .manu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.manuLogo .logo {
+  cursor: pointer;
+}
+
+/* Search_Bar_Audio */
+.searchbarAudio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.form {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input {
+  padding: 1rem 1rem 1rem 1.5rem;
+  width: 32rem;
+  border: 1px solid #d4d4d4;
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #0b82b9;
+}
+
+.searchbarAudio .searchIcon {
+  width: fit-content;
+  height: auto;
+  padding: 1rem 2rem;
+  background-color: #272727;
+  border-top-right-radius: 12rem;
+  border-bottom-right-radius: 12rem;
+  cursor: pointer;
+}
+
+.searchbarAudio .audio {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Search_Bar_Audio */
+.liveNotificationProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+}
+
+/* Right Header Section */
+.liveNotificationProfile .live,
+.liveNotificationProfile .notification {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.liveNotificationProfile .profile img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* ************************** */
+/* Main Section */
+/* ************************** */
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+
+/* ************************** */
+/* Left_Bar Section */
+/* ************************** */
+
+.leftBarContainer {
+  min-width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 1rem;
+  overflow-y: scroll;
+}
+
+.Leftbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.89rem;
+  flex-shrink: 0;
+}
+
+.adjleftbar {
+  border-bottom: 2px solid #272727;
+}
+
+.Leftbar .bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  padding: 0.65rem;
+}
+
+/* Adustment for Home container */
+.bar:hover {
+  width: 100%;
+  background-color: #272727;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.subhdContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+.subhdContainer .subhd {
+  font-size: 1.5rem;
+}
+
+/* ************************** */
+/* Top_Navigation Section */
+/* ************************** */
+.centersection {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+/* ************************** */
+/* Top_Navigation Section */
+/* ************************** */
+.nav {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0rem;
+}
+
+.nav .span {
+  background-color: #272727;
+  padding: 0.69rem 0.89rem;
+  border-radius: 0.5rem;
+}
+
+.nav .active {
+  background-color: #fff;
+  color: #121212;
+}
+
+.span:hover {
+  color: #272727;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* ************************** */
+/* Clips Section */
+/* ************************** */
+.subtotalclipcontainer {
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalclipcontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+
+.infocontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 1.5rem;
+}
+
+.bgclip {
+  width: 100%;
+  height: auto;
+}
+
+.bgclip img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.clipInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 1.5rem;
+}
+
+.img {
+  width: fit-content;
+  height: auto;
+}
+
+.img img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.txtmenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 1rem;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+}
+
+.subname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 0.5rem;
+  color: #4f4f4f;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.subname p,
+.stats .views,
+.stats .separator,
+.stats .upload-date {
+  font-size: 1.3rem;
+}
+
+.manuIcon i {
+  font-size: 1.5rem;
+}
+
+/* ************************** */
+/* Timeframe Position Section */
+/* ************************** */
+
+.timeframeoclip {
+  position: relative;
+}
+
+.timeframeoclip .time {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
